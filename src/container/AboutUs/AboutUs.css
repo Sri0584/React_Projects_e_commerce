@@ -1,0 +1,79 @@
+.about-container{
+    position: relative;
+}
+.about-image{
+    position: absolute;
+    inset: 0;
+}
+.about-image img{
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+}
+.about_content{
+    width: 100%;
+    z-index: 2;
+}
+.about-us-content{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+.knife{
+    margin: 2rem 4rem;
+}
+.knife img{
+    height: 910px;
+}
+.about-us-content p,.history p{
+    margin: 2rem 0;
+    color: var(--color-grey);
+}
+.history{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+@media screen and (min-width:2000px) {
+    .knife img{
+    height: 1110px;
+}
+.about-us-content p,.history p{
+    margin: 4rem 0;
+}
+}
+/* @media screen and (max-width:900px) {
+   .knife{
+       margin: 2rem 0;
+   }
+   .about_content{
+       flex-direction: column;
+   }
+} */
+@media screen and (max-width:650px) {
+    .about-image img{
+        width: 80%;
+        height: 320px;
+    }
+    .about_content{
+       flex-direction: column;
+   }
+   .about-us-content,.history{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+    .knife{
+       margin: 4rem 0.5rem;
+    }
+    .knife img{
+        height: 600px;
+    }
+
+}
